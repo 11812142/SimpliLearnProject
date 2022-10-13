@@ -1,0 +1,5 @@
+In Microsoft SQL Server management Studio
+Steps: The following master tables will be created:
+      Student – store all student data across multiple classes
+      Subjects – master list of subjects taught in all classes
+      Classes – list of classes in the school
