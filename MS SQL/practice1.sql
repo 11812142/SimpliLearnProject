@@ -1,8 +1,11 @@
 create database school
 use school
-create table student(student_id int primary key,student_name varchar(25),student_class int check(student_class<=12))
+create table student(student_id int primary key,student_name varchar(25),student_class int )
+
+
 create table subjects(subjects_id int primary key,subjects_name varchar(25))
 create table classes(class_id int primary key,class_strength varchar(30))
+create table marks(student_id int primary key,student_name varchar(20),subject_marks int)
 
 create index student_index on student(student_id,student_name,student_class)
 create index subjects_index on subjects(subjects_id,subjects_name)
@@ -29,3 +32,12 @@ insert into classes values(05,'Fifty')
 select*from student
 select*from subjects
 select*from classes
+
+
+insert into marks values(1,'Aditya',77)
+insert into marks values(2,'Riya',69)
+insert into marks values(3,'Raj',98)
+insert into marks values(4,'Shweta',86)
+insert into marks values(5,'Zain',80)
+
+select * from marks
