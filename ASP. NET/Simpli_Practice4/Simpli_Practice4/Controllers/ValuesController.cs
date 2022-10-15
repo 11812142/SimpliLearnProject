@@ -98,6 +98,7 @@ namespace Simpli_Practice4.Controllers
         }
 
         // DELETE api/<controller>/5 
+        [HttpDelete]
         public HttpResponseMessage Deletemarks(int id)
         {
             bool ans = obj.removemarks(id);
